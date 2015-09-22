@@ -33,13 +33,27 @@
     header {
         background-color: #fff;
         padding: 12px 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
         overflow: hidden;
+        z-index: 1000;
     }
 
     .content {
         width: 100%;
         max-width: 1080px;
         margin: 0 auto;
+        overflow: hidden;
+    }
+
+    section {
+        position: relative;
+    }
+
+    section-white {
+        background-color: #fff;
     }
 
     .main-logo {
@@ -81,6 +95,9 @@
             background-color: #DA7570;
         }
 
+    .hero {
+        margin-top: 71px;
+    }
 
     .main-hero {
         background: url('src/img/hero/main_hero.png') no-repeat top center fixed;
@@ -92,6 +109,11 @@
 
     .hero-overlay {
         background-color: rgba(207,98,93,0.78);
+    }
+
+    canvas {
+        position: absolute;
+        top: 0;
     }
 
 
@@ -124,8 +146,8 @@
             </div>
         </section>
     </header>
-    <section class="main-hero">
-        <div class="hero-overlay particles-js">
+    <section class="hero main-hero">
+        <div id="particles" class="hero-overlay">
             <section class="content">
                 <article class="">
                     Noe innhold
@@ -150,6 +172,13 @@
                 </article>
             </section>
         </div>
+    </section>
+    <section style="section-white">
+        <section class="content">
+            <article>
+                <h1>Featured speakers</h1>
+            </article>
+        </section>
     </section>
     <footer></footer>
 
