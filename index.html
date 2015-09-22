@@ -8,6 +8,7 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css?family=Roboto:400,300,100,500');
+    @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 
 
     html, body {
@@ -33,6 +34,7 @@
     h1 {
         font-size: 50px;
         font-weight: 300;
+        line-height: 60px;
         margin-top: 0;
     }
 
@@ -48,6 +50,9 @@
         right: 0;
         left: 0;
         overflow: hidden;
+        -webkit-box-shadow: 0 -1px 6px #231f20;
+        -moz-box-shadow: 0 -1px 6px #231f20;
+        box-shadow: 0 -1px 6px #231f20;
         z-index: 1000;
     }
 
@@ -108,6 +113,14 @@
         padding: 11px 15px;
         border-radius: 2px;
         cursor: pointer;
+        display: inline-block;
+    }
+
+    .btn-lg {
+        padding: 11px 15px;
+        border-radius: 2px;
+        cursor: pointer;
+        display: inline-block;
     }
 
     .btn-menu {
@@ -118,6 +131,15 @@
         .btn-menu:hover {
             background-color: #DA7570;
         }
+
+    .btn-special {
+        color: #fff;
+        font-size: 19px;
+        font-weight: 500;
+        line-height: normal;
+        background-color: rgba(0, 0, 0, 0.20);
+        border: 2px solid #fff;
+    }
 
     .hero {
         margin-top: 71px;
@@ -163,6 +185,26 @@
             font-weight: 300;
         }
 
+
+    .early-bird-promo-box {
+        margin-top: 60px;
+    }
+
+        .early-bird-promo-box .context {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 5px;
+        }
+
+        .early-bird-promo-box .countdown-text {
+            color: #fff;
+            font-size: 29px;
+            font-weight: 300;
+            line-height: normal;
+            margin-bottom: 20px;
+        }
     /* Helper classes */
 
     .text-center {
@@ -205,6 +247,11 @@
                     </figure>
                     <div class="hero-place">APRIL 14 - 16, 2016   //   OSLO, NORWAY</div>
                     <div class="hero-header"><span class="highlight">Innovative</span> and <span class="highlight">Creative</span> thinkers</div>
+                    <div class="early-bird-promo-box">
+                        <div class="context">Get your Early-bird tickets before the offer expires in</div>
+                        <div class="countdown-text"><i class="fa fa-circle-o-notch fa-spin"></i></div>
+                        <div class="btn-lg btn-special">GET YOU EARLY-BIRD TICKETS</div>
+                    </div>
                 </article>
             </section>
         </div>
@@ -221,6 +268,7 @@
     <!-- jQuery.min -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="src/js/lib/particles.min.js"></script>
+    <script src="src/js/plugins/jquery.countdown.js"></script>
     <script src="src/js/app.js"></script>
 </body>
 </html>
