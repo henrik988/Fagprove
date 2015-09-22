@@ -5,7 +5,152 @@
     <meta charset="utf-8" />
     <title>Splitscreen | 2016</title>
 </head>
-<body>
 
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,300,100,500');
+
+
+    html, body {
+        margin: 0;
+    }
+
+    *, *:before, *:after {
+        outline: 0;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        font-weight: 100;
+        line-height: 25px;
+        color: #231f20;
+        background-color: #f2f2f2;
+    }
+
+    header {
+        background-color: #fff;
+        padding: 12px 0;
+        overflow: hidden;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+    .main-logo {
+        background: url('src/img/main_logo.png') no-repeat left center;
+        width: 83px;
+        height: 45px;
+        text-indent: 9999px;
+    }
+
+    .main-menu {
+    }
+
+        .main-menu ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .main-menu li {
+            font-size: 17px;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin: 0 16px;
+            display: inline-block;
+        }
+
+    .btn {
+        padding: 11px 15px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .btn-menu {
+        background-color: #cf625d;
+        color: #fff;
+    }
+
+        .btn-menu:hover {
+            background-color: #DA7570;
+        }
+
+
+    .main-hero {
+        background: url('src/img/hero/main_hero.png') no-repeat top center fixed;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+
+    .hero-overlay {
+        background-color: rgba(207,98,93,0.78);
+    }
+
+
+    /* Helper classes */
+
+    .pull-left {
+        float: left !important;
+    }
+
+    .pull-right {
+        float: right !important;
+    }
+</style>
+<body>
+    <header>
+        <section class="content">
+            <a href="/">
+                <div class="main-logo pull-left">
+                    SPLITSCREEN
+                </div>
+            </a>
+            <div class="main-menu pull-right">
+                <ul>
+                    <li>Explor SPLITSCREEN</li>
+                    <li>Conference center</li>
+                    <li>Program</li>
+                    <li>Speakers</li>
+                    <li class="btn btn-menu">GET YOUR TICKETS</li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <section class="main-hero">
+        <div class="hero-overlay">
+            <section class="content">
+                <article class="">
+                    Noe innhold
+                <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </article>
+            </section>
+        </div>
+    </section>
+    <footer></footer>
 </body>
 </html>
