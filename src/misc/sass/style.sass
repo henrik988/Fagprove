@@ -4,6 +4,7 @@ $concrete: #f2f2f2;
 $white: #fff;
 $color_chestnut_rose_approx: #cf625d;
 $color_japonica_approx: #da7570;
+$black_20: rgba(0, 0, 0, 0.20);
 $color_chestnut_rose_78_approx: rgba(207,98,93,0.78);
 
 //fonts
@@ -12,10 +13,12 @@ $font_1: sans-serif;
 
 //urls
 $url_0: url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500);
-$url_1: url(src/img/main_logo.png);
-$url_2: url(src/img/hero/main_hero.png);
+$url_1: url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+$url_2: url(src/img/main_logo.png);
+$url_3: url(src/img/hero/main_hero.png);
 
 @import $url_0;
+@import $url_1;
 html {
 	margin: 0;
 }
@@ -46,6 +49,7 @@ body {
 h1 {
 	font-size: 50px;
 	font-weight: 300;
+	line-height: 60px;
 	margin-top: 0;
 }
 figure {
@@ -59,6 +63,8 @@ header {
 	right: 0;
 	left: 0;
 	overflow: hidden;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 -1px 6px $color_zeus_approx;
 	z-index: 1000;
 	.content {
 		padding: 0;
@@ -86,7 +92,7 @@ section-white {
 	background-color: $white;
 }
 .main-logo {
-	background: $url_1 no-repeat left center;
+	background: $url_2 no-repeat left center;
 	width: 83px;
 	height: 45px;
 	text-indent: 9999px;
@@ -110,6 +116,14 @@ section-white {
 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
 	border-radius: 2px;
 	cursor: pointer;
+	display: inline-block;
+}
+.btn-lg {
+	padding: 11px 15px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 2px;
+	cursor: pointer;
+	display: inline-block;
 }
 .btn-menu {
 	background-color: $color_chestnut_rose_approx;
@@ -118,11 +132,19 @@ section-white {
 		background-color: $color_japonica_approx;
 	}
 }
+.btn-special {
+	color: $white;
+	font-size: 19px;
+	font-weight: 500;
+	line-height: normal;
+	background-color: $black_20;
+	border: 2px solid $white;
+}
 .hero {
 	margin-top: 71px;
 }
 .main-hero {
-	background: $url_2 no-repeat 100% 100% fixed;
+	background: $url_3 no-repeat 100% 100% fixed;
 	background-size: cover;
 }
 .hero-overlay {
@@ -149,6 +171,23 @@ canvas {
 	line-height: normal;
 	span.highlight {
 		font-weight: 300;
+	}
+}
+.early-bird-promo-box {
+	margin-top: 60px;
+	.context {
+		color: $white;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: normal;
+		margin-bottom: 5px;
+	}
+	.countdown-text {
+		color: $white;
+		font-size: 29px;
+		font-weight: 300;
+		line-height: normal;
+		margin-bottom: 20px;
 	}
 }
 .text-center {
