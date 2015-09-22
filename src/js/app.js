@@ -1,15 +1,14 @@
 ﻿
 
-
-
-var heroOverlay = $('.hero-overlay').height();
-$('.particles-js-canvas-el').attr('style', 'height:' + heroOverlay + ' !important');
-//$('.particles-js-canvas-el').css('height', heroOverlay, 'important');
-loadPartoclesJs()
-
-
-function loadPartoclesJs() {
+$(function () {
+    // Initialize Particles JS
     particlesJS.load('particles', 'src/js/lib/cfg/particles.json', function () {
         console.log('callback - particles.js config loaded');
     });
-};
+
+    // Config and initialize Early-bird countdown
+    $('.countdown-text').countdown({
+        date: "October 28, 2015 23:59:59"
+    });
+
+});
