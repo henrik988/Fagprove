@@ -36,6 +36,7 @@
         font-weight: 300;
         line-height: 60px;
         margin-top: 0;
+        margin-bottom: 50px;
     }
 
     figure {
@@ -53,7 +54,7 @@
         -webkit-box-shadow: 0 -1px 6px #231f20;
         -moz-box-shadow: 0 -1px 6px #231f20;
         box-shadow: 0 -1px 6px #231f20;
-        z-index: 1000;
+        z-index: 10000;
     }
 
         header .content {
@@ -66,7 +67,7 @@
         margin: 0 auto;
         padding: 60px 0 80px 0;
         overflow: hidden;
-        z-index: 10000;
+        z-index: 1000;
     }
 
     .content {
@@ -109,6 +110,15 @@
             display: inline-block;
         }
 
+            .main-menu li:first-child {
+                margin-left: 0;
+            }
+
+            .main-menu li:last-child {
+                margin-right: 0;
+            }
+
+
     .btn {
         padding: 11px 15px;
         border-radius: 2px;
@@ -146,7 +156,7 @@
     }
 
     .main-hero {
-        background: url('src/img/hero/main_hero.png') no-repeat 100% 100% fixed;
+        background: url('src/img/hero/main_hero.png') no-repeat 100% 100%;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -157,7 +167,7 @@
         background-color: rgba(207,98,93,0.78);
     }
 
-    canvas {
+    canvas.particles-js-canvas-el {
         position: absolute;
         top: 0;
     }
@@ -205,10 +215,31 @@
             line-height: normal;
             margin-bottom: 20px;
         }
+
+    .speakers-row {
+        margin-right: -15px;
+        margin-left: -15px;
+        overflow: hidden;
+    }
+
+        .speakers-row .speaker {
+            float: left;
+            width: 25%;
+            padding: 0 15px;
+        }
+
+            .speakers-row .speaker img {
+                width: 100%;
+            }
+
     /* Helper classes */
 
     .text-center {
         text-align: center;
+    }
+
+    .text-left {
+        text-align: left;
     }
 
     .pull-left {
@@ -260,6 +291,28 @@
         <section class="content">
             <article class="text-center">
                 <h1>Featured speakers</h1>
+                <div class="speakers-row text-left ">
+                    <div class="speaker">
+                        <img src="src/img/speakers/david_wild.jpg" />
+                        David Wild,<br />
+                        CEO
+                    </div>
+                    <div class="speaker">
+                        <img src="src/img/speakers/dan_soschin.jpg" />
+                        Dan Soschin,<br />
+                        Lead of Marketing
+                    </div>
+                    <div class="speaker">
+                        <img src="src/img/speakers/chris_marriott.jpg" />
+                        Christopher Marriott,<br />
+                        Vice President
+                    </div>
+                    <div class="speaker">
+                        <img src="src/img/speakers/jens_axelsson.jpg" />
+                        Jens Axelsson,<br />
+                        Online Manager
+                    </div>
+                </div>
             </article>
         </section>
     </section>

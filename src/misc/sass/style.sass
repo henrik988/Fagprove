@@ -51,6 +51,7 @@ h1 {
 	font-weight: 300;
 	line-height: 60px;
 	margin-top: 0;
+	margin-bottom: 50px;
 }
 figure {
 	margin: 0;
@@ -65,7 +66,7 @@ header {
 	overflow: hidden;
 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
 	box-shadow: 0 -1px 6px $color_zeus_approx;
-	z-index: 1000;
+	z-index: 10000;
 	.content {
 		padding: 0;
 	}
@@ -76,7 +77,7 @@ header {
 	margin: 0 auto;
 	padding: 60px 0 80px;
 	overflow: hidden;
-	z-index: 10000;
+	z-index: 1000;
 }
 .content {
 	width: 100%;
@@ -109,6 +110,12 @@ section-white {
 		text-transform: uppercase;
 		margin: 0 16px;
 		display: inline-block;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 }
 .btn {
@@ -144,15 +151,11 @@ section-white {
 	margin-top: 71px;
 }
 .main-hero {
-	background: $url_3 no-repeat 100% 100% fixed;
+	background: $url_3 no-repeat 100% 100%;
 	background-size: cover;
 }
 .hero-overlay {
 	background-color: $color_chestnut_rose_78_approx;
-}
-canvas {
-	position: absolute;
-	top: 0;
 }
 .hero-logo {
 	margin-bottom: 15px;
@@ -190,12 +193,32 @@ canvas {
 		margin-bottom: 20px;
 	}
 }
+.speakers-row {
+	margin-right: -15px;
+	margin-left: -15px;
+	overflow: hidden;
+	.speaker {
+		float: left;
+		width: 25%;
+		padding: 0 15px;
+		img {
+			width: 100%;
+		}
+	}
+}
 .text-center {
 	text-align: center;
+}
+.text-left {
+	text-align: left;
 }
 .pull-left {
 	float: left !important;
 }
 .pull-right {
 	float: right !important;
+}
+canvas.particles-js-canvas-el {
+	position: absolute;
+	top: 0;
 }
