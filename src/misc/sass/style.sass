@@ -1,224 +1,395 @@
 //colors
-$color_zeus_approx: #231f20;
-$concrete: #f2f2f2;
-$white: #fff;
-$color_chestnut_rose_approx: #cf625d;
-$color_japonica_approx: #da7570;
-$black_20: rgba(0, 0, 0, 0.20);
-$color_chestnut_rose_78_approx: rgba(207,98,93,0.78);
+$color_downy_approx: #65c6bb
+$color_zeus_approx: #231f20
+$concrete: #f2f2f2
+$white: #fff
+$color_chestnut_rose_approx: #cf625d
+$color_japonica_approx: #da7570
+$black_20: rgba(0, 0, 0, 0.20)
+$color_chestnut_rose_78_approx: rgba(207,98,93,0.78)
+$color_tapa_approx: #777777
 
 //fonts
-$font_0: Roboto;
-$font_1: sans-serif;
+$font_0: Roboto
+$font_1: sans-serif
 
 //urls
-$url_0: url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500);
-$url_1: url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-$url_2: url(src/img/main_logo.png);
-$url_3: url(src/img/hero/main_hero.png);
+$url_0: url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500)
+$url_1: url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css)
+$url_2: url(src/img/hero/quotes_hero.png)
+$url_3: url(src/img/main_logo.png)
+$url_4: url(src/img/hero/main_hero.png)
+
+//@extend-elements
+//original selectors
+//*, *:before, *:after
+.extend_1 
+	outline: 0
+	//If you use compass, instead of the line below you could use + box-sizing($bs)
+	box-sizing: border-box
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+
+
+//original selectors
+//.speakers-row .speaker .name-title, .speakers-row .speaker .company-info
+.extend_2 
+	font-size: 21px
+	line-height: 26px
+	font-weight: 100
+
+
 
 @import $url_0;
 @import $url_1;
-html {
-	margin: 0;
-}
-body {
-	margin: 0;
-	font-family: $font_0, $font_1;
-	font-size: 22px;
-	font-weight: 100;
-	line-height: 25px;
-	color: $color_zeus_approx;
-	background-color: $concrete;
-}
-* {
-	outline: 0;
-	//Instead of the line below you could use @include box-sizing($bs)
-	box-sizing: border-box;
-	&:before {
-		outline: 0;
-		//Instead of the line below you could use @include box-sizing($bs)
-		box-sizing: border-box;
-	}
-	&:after {
-		outline: 0;
-		//Instead of the line below you could use @include box-sizing($bs)
-		box-sizing: border-box;
-	}
-}
-h1 {
-	font-size: 50px;
-	font-weight: 300;
-	line-height: 60px;
-	margin-top: 0;
-	margin-bottom: 50px;
-}
-figure {
-	margin: 0;
-}
-header {
-	background-color: $white;
-	padding: 12px 0;
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	overflow: hidden;
-	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-	box-shadow: 0 -1px 6px $color_zeus_approx;
-	z-index: 10000;
-	.content {
-		padding: 0;
-	}
-}
-.hero-content {
-	width: 100%;
-	max-width: 1080px;
-	margin: 0 auto;
-	padding: 60px 0 80px;
-	overflow: hidden;
-	z-index: 1000;
-}
-.content {
-	width: 100%;
-	max-width: 1080px;
-	margin: 0 auto;
-	padding: 80px 0;
-	overflow: hidden;
-}
-section {
-	position: relative;
-}
-.section-white {
-	background-color: $white;
-}
-.main-logo {
-	background: $url_2 no-repeat left center;
-	width: 83px;
-	height: 45px;
-	text-indent: 9999px;
-}
-.main-menu {
-	ul {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-	}
-	li {
-		font-size: 17px;
-		font-weight: 300;
-		text-transform: uppercase;
-		margin: 0 16px;
-		display: inline-block;
-		&:first-child {
-			margin-left: 0;
-		}
-		&:last-child {
-			margin-right: 0;
-		}
-	}
-}
-.btn {
-	padding: 11px 15px;
-	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-	border-radius: 2px;
-	cursor: pointer;
-	display: inline-block;
-}
-.btn-lg {
-	padding: 11px 15px;
-	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-	border-radius: 2px;
-	cursor: pointer;
-	display: inline-block;
-}
-.btn-menu {
-	background-color: $color_chestnut_rose_approx;
-	color: $white;
-	&:hover {
-		background-color: $color_japonica_approx;
-	}
-}
-.btn-special {
-	color: $white;
-	font-size: 19px;
-	font-weight: 500;
-	line-height: normal;
-	background-color: $black_20;
-	border: 2px solid $white;
-}
-.hero {
-	margin-top: 71px;
-}
-.main-hero {
-	background: $url_3 no-repeat 100% 100%;
-	background-size: cover;
-}
-.hero-overlay {
-	background-color: $color_chestnut_rose_78_approx;
-}
-.hero-logo {
-	margin-bottom: 15px;
-}
-.hero-place {
-	font-size: 21px;
-	font-weight: 400;
-	line-height: normal;
-	color: $white;
-	margin-bottom: 20px;
-}
-.hero-header {
-	color: $white;
-	font-size: 51px;
-	font-weight: 100;
-	line-height: normal;
-	span.highlight {
-		font-weight: 300;
-	}
-}
-.early-bird-promo-box {
-	margin-top: 60px;
-	.context {
-		color: $white;
-		font-size: 24px;
-		font-weight: 500;
-		line-height: normal;
-		margin-bottom: 5px;
-	}
-	.countdown-text {
-		color: $white;
-		font-size: 29px;
-		font-weight: 300;
-		line-height: normal;
-		margin-bottom: 20px;
-	}
-}
-.speakers-row {
-	margin-right: -15px;
-	margin-left: -15px;
-	overflow: hidden;
-	.speaker {
-		float: left;
-		width: 25%;
-		padding: 0 15px;
-		img {
-			width: 100%;
-		}
-	}
-}
-.text-center {
-	text-align: center;
-}
-.text-left {
-	text-align: left;
-}
-.pull-left {
-	float: left !important;
-}
-.pull-right {
-	float: right !important;
-}
-canvas.particles-js-canvas-el {
-	position: absolute;
-	top: 0;
-}
+html 
+	margin: 0
+
+body 
+	margin: 0
+	font-family: $font_0, $font_1
+	font-size: 22px
+	font-weight: 100
+	line-height: 25px
+	color: $color_zeus_approx
+	background-color: $concrete
+
+* 
+	@extend %extend_1
+	&:before 
+		@extend %extend_1
+
+	&:after 
+		@extend %extend_1
+
+
+::selection 
+	background-color: $color_downy_approx
+
+::-moz-selection 
+	background-color: $color_downy_approx
+
+h1 
+	font-size: 50px
+	font-weight: 300
+	line-height: 60px
+	margin-top: 0
+	margin-bottom: 50px
+
+figure 
+	margin: 0
+	&.quote img 
+		display: block
+		width: 100%
+
+
+header 
+	background-color: $white
+	padding: 12px 0
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	overflow: hidden
+	-webkit-box-shadow: 0 -1px 6px $color_zeus_approx
+	-moz-box-shadow: 0 -1px 6px $color_zeus_approx
+	//If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 -1px 6px $color_zeus_approx
+	z-index: 10000
+	.content 
+		padding: 0
+
+
+.hero-content 
+	width: 100%
+	max-width: 1080px
+	margin: 0 auto
+	padding: 60px 0 80px
+	overflow: hidden
+	z-index: 1000
+
+.content 
+	width: 100%
+	max-width: 1080px
+	margin: 0 auto
+	padding: 80px 0
+	overflow: hidden
+	&.quotes-content 
+		z-index: 1000
+
+
+section 
+	position: relative
+
+.section-white 
+	background-color: $white
+
+.section-gray 
+	background-color: $concrete
+
+.section-quotes 
+	background: $url_2 no-repeat 100% 100%
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+
+.row 
+	margin-right: -15px
+	margin-left: -15px
+	overflow: hidden
+	&.sponsors 
+		img 
+			width: 100%
+
+		> .col-10:nth-last-child(-n+10) 
+			margin-bottom: 0
+
+
+
+.col-10 
+	float: left
+	width: 10%
+	padding: 0 15px
+	margin-bottom: 30px
+
+.col-20 
+	float: left
+	width: 20%
+	padding: 0 15px
+	margin-bottom: 30px
+
+.col-32 
+	float: left
+	width: 32.13%
+	padding: 0 15px
+	margin-bottom: 30px
+
+.col-50 
+	float: left
+	width: 50%
+	padding: 0 15px
+	margin-bottom: 30px
+
+.col-68 
+	float: left
+	width: 67.87%
+	padding: 0 15px
+	margin-bottom: 30px
+
+.main-logo 
+	background: $url_3 no-repeat left center
+	width: 83px
+	height: 45px
+	text-indent: 9999px
+
+.main-menu 
+	ul 
+		padding: 0
+		margin: 0
+		list-style: none
+
+	li 
+		font-size: 17px
+		font-weight: 300
+		text-transform: uppercase
+		margin: 0 16px
+		display: inline-block
+		&:first-child 
+			margin-left: 0
+
+		&:last-child 
+			margin-right: 0
+
+
+
+.btn 
+	padding: 15px 30px
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 2px
+	cursor: pointer
+	display: inline-block
+	border: 0
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	//If you use compass, instead of the line below you could use + user-select($select)
+	user-select: none
+
+.btn-lg 
+	padding: 11px 15px
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 2px
+	cursor: pointer
+	display: inline-block
+	border: 0
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	//If you use compass, instead of the line below you could use + user-select($select)
+	user-select: none
+
+.btn-menu 
+	padding: 11px 15px
+	background-color: $color_chestnut_rose_approx
+	color: $white
+	&:hover 
+		background-color: $color_japonica_approx
+
+
+.btn-primary 
+	background-color: $color_chestnut_rose_approx
+	color: $white
+	font-size: 19px
+	font-weight: 500
+
+.btn-special 
+	color: $white
+	font-size: 19px
+	font-weight: 500
+	line-height: normal
+	background-color: $black_20
+	border: 2px solid $white
+
+.hero 
+	margin-top: 71px
+
+.main-hero 
+	background: $url_4 no-repeat 100% 100%
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+
+.hero-overlay 
+	background-color: $color_chestnut_rose_78_approx
+
+.hero-logo 
+	margin-bottom: 15px
+
+.hero-place 
+	font-size: 21px
+	font-weight: 400
+	line-height: normal
+	color: $white
+	margin-bottom: 20px
+
+.hero-header 
+	color: $white
+	font-size: 51px
+	font-weight: 100
+	line-height: normal
+	span.highlight 
+		font-weight: 300
+
+
+.early-bird-promo-box 
+	margin-top: 60px
+	.context 
+		color: $white
+		font-size: 24px
+		font-weight: 500
+		line-height: normal
+		margin-bottom: 5px
+
+	.countdown-text 
+		color: $white
+		font-size: 29px
+		font-weight: 300
+		line-height: normal
+		margin-bottom: 20px
+
+
+.speakers-row 
+	margin-right: -15px
+	margin-left: -15px
+	overflow: hidden
+	.speaker 
+		float: left
+		width: 25%
+		padding: 0 15px
+		margin-bottom: 30px
+		figure 
+			margin-bottom: 12px
+
+		img 
+			width: 100%
+			display: block
+
+		.name-title 
+			margin-bottom: 14px
+			@extend %extend_2
+			span.name 
+				font-weight: 400
+
+
+		.company-info 
+			@extend %extend_2
+			.company 
+				font-weight: 300
+
+
+
+
+.all-speakers-btn 
+	margin-top: 40px
+
+.big-conference-info 
+	color: $color_chestnut_rose_approx
+	font-size: 55px
+	font-weight: 100
+	line-height: 65px
+
+.quotes-container 
+	background-color: $color_downy_approx
+	padding: 35px
+
+.quote-text 
+	font-size: 45px
+	font-weight: 300
+	line-height: 50px
+	color: $white
+	.quote 
+		font-weight: 500
+		color: $color_chestnut_rose_approx
+
+
+.quote-author 
+	font-size: 33px
+	font-weight: 100
+	line-height: normal
+	color: $white
+	margin-top: 29px
+
+.sponsor-divider 
+	height: 2px
+	width: 70px
+	background-color: $color_tapa_approx
+	margin: 0 auto 30px auto
+
+footer 
+	background-color: $color_zeus_approx
+	color: $white
+
+.text-center 
+	text-align: center
+
+.text-left 
+	text-align: left
+
+.text-right 
+	text-align: right
+
+.pull-left 
+	float: left !important
+
+.pull-right 
+	float: right !important
+
+p.subheader 
+	margin-top: -41px
+	margin-bottom: 50px
+
+canvas.particles-js-canvas-el 
+	position: absolute
+	top: 0
