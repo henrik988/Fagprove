@@ -16,11 +16,7 @@
     // Hamburger-menu animation toggle
     $('#hamburger-menu').click(function () {
         $(this).toggleClass('open');
+        $(".main-menu").toggleClass("toggled");
     });
 
 });
-
-// Toggle mobile menu
-function toggleMainMenu() {
-    $(".main-menu").toggleClass("toggled");
-};
