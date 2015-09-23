@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Splitscreen | 2016</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!-- Favicons/tiles for support all browsers -->
     <link rel="shortcut icon" href="src/img/favicons/favicon.ico">
@@ -28,9 +29,8 @@
     <meta name="msapplication-config" content="src/img/favicons/browserconfig.xml">
 
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/mediaqueries.css">
 </head>
-
-
 <body>
     <header>
         <section class="content">
@@ -39,6 +39,12 @@
                     SPLITSCREEN
                 </div>
             </a>
+
+            <div id="hamburger-menu" onclick="toggleMainMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="main-menu pull-right">
                 <ul>
                     <li><a href="#">Explor SPLITSCREEN</a></li>
@@ -63,7 +69,7 @@
                     <div class="early-bird-promo-box">
                         <div class="context">Get your Early-bird tickets before the offer expires in</div>
                         <div class="countdown-text"><i class="fa fa-circle-o-notch fa-spin"></i></div>
-                        <div class="btn-lg btn-special">GET YOU EARLY-BIRD TICKETS</div>
+                        <div class="btn-lg btn-special">GET YOUR EARLY-BIRD TICKETS</div>
                     </div>
                 </article>
             </section>
@@ -164,14 +170,14 @@
                                 <div class="quote-author text-right">- Alyssa Simpson</div>
                             </div>
                         </div>
-                        <div class="col-32">
+                        <div class="col-32 hidden-md">
                             <figure class="quote">
                                 <img src="src/img/quotes/alyssa_simpson.png" />
                             </figure>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-32">
+                        <div class="col-32 hidden-md">
                             <figure class="quote">
                                 <img src="src/img/quotes/laura_teclemariam.png" />
                             </figure>
@@ -276,6 +282,8 @@
 
     <!-- Particles JS -->
     <script src="src/js/lib/particles.min.js"></script>
+
+    <script src="src/js/lib/fastclick.js"></script>
 
     <!-- Countdown JS (jQuary) -->
     <script src="src/js/plugins/jquery.countdown.js"></script>
