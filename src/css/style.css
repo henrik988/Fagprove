@@ -543,7 +543,7 @@ figure.quote img {
 .select-tickets-content, .ticket-information-content {
     border: 2px solid #64C6BB;
     border-top: 0px;
-    padding: 17px 30px;
+    padding: 20px 30px 29px 30px;
     overflow: hidden;
 }
 
@@ -593,6 +593,7 @@ figure.quote img {
 .dashed-divider {
     height: 1px;
     border-top: 1px dotted #231f20;
+    margin: 18px 0;
 }
 
 .ticket-selection {
@@ -601,7 +602,7 @@ figure.quote img {
 
 .ticket-type {
     font-size: 23px;
-    line-height: 25px;
+    line-height: 43px;
     font-weight: 400;
     display: inline-block;
 }
@@ -617,14 +618,67 @@ figure.quote img {
 
 .order-amount {
     display: inline-block;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 43px;
 }
+
+    .order-amount span {
+        font-size: 22px;
+        font-weight: 300;
+        color: #777777;
+        margin: 0 14px;
+    }
 
 .order-amount-celect {
     border: 2px solid #c6c6c6;
-    padding: 11px 10px 11px 20px;
+    padding: 6px 10px 6px 20px;
     color: #777777;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 }
 
+.ticket-number {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+input {
+    width: 100%;
+    border: 2px solid #c6c6c6;
+    height: 43px;
+    margin-top: 5px;
+    padding: 8px 11px;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #231f20;
+}
+
+label {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.pay-section {
+    margin-top: 55px;
+}
+
+.total-price {
+    font-size: 29px;
+    font-weight: 300;
+    color: #8d8d8d;
+}
+
+    .total-price .calculated-price, .total-price .calculated-price-text {
+        color: #65c6bb;
+        font-weight: 400;
+    }
 /* Footer styles */
 
 footer {

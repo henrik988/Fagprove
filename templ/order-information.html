@@ -28,7 +28,6 @@
                         <div class="pull-right">
                             <div class="order-amount">$329 Inc. VAT <span>x</span></div>
                             <select class="order-amount-celect">
-                                <option disables>-</option>
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -39,14 +38,40 @@
                         </div>
                     </div>
                     <div class="dashed-divider"></div>
-                    <div class="form-area">
-                        <div class="ticket-order-info">
-                            <h3 class="test-texting">Test 1</h3>
-                            <input type="text" />
+                    <form action="https://paypal.com">
+                        <div class="form-area">
+                            <div class="ticket-order-info">
+                                <div class="ticket-number">Ticket #1</div>
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label>Firstname</label>
+                                        <input type="text" name="Firstname" />
+                                    </div>
+                                    <div class="col-50">
+                                        <label>Lastname</label>
+                                        <input type="text" name="Lastname" />
+                                    </div>
+                                    <div class="col-50">
+                                        <label>Email</label>
+                                        <input type="text" name="Email" />
+                                    </div>
+                                    <div class="col-50">
+                                        <label>Mobile</label>
+                                        <input type="text" name="Mobile" />
+                                    </div>
+                                </div>
+                                <div class="dashed-divider"></div>
+                            </div>
                         </div>
-                    </div>
-
-
+                        <div class="select-tickets-bottom pay-section">
+                            <div class="select-ticket-bottom-content pull-left">
+                                <div class="total-price"><span class="amount">1</span> x $329 = <span class="calculated-price-text">$</span><span class="calculated-price">329</span><span class="calculated-price-text"> Inc. VAT</span></div>
+                            </div>
+                            <div class="select-tickets-button pull-right">
+                                <button type="submit" class="btn btn-lg btn-secondary">PAYPAL CHECKOUT</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </article>

@@ -10,6 +10,7 @@ $black_20: rgba(0, 0, 0, 0.20)
 $color_chestnut_rose_78_approx: rgba(207,98,93,0.78)
 $color_tapa_approx: #777777
 $color_pumice_approx: #c6c6c6
+$color_stack_approx: #8d8d8d
 
 //fonts
 $font_0: Roboto
@@ -61,7 +62,7 @@ $url_6: url(../img/icons/divider_white.png)
 .extend_4 
 	border: 2px solid $color_downy_approx
 	border-top: 0
-	padding: 17px 30px
+	padding: 20px 30px 29px
 	overflow: hidden
 
 
@@ -590,13 +591,14 @@ section
 .dashed-divider 
 	height: 1px
 	border-top: 1px dotted $color_zeus_approx
+	margin: 18px 0
 
 .ticket-selection 
 	overflow: hidden
 
 .ticket-type 
 	font-size: 23px
-	line-height: 25px
+	line-height: 43px
 	font-weight: 400
 	display: inline-block
 
@@ -610,11 +612,62 @@ section
 
 .order-amount 
 	display: inline-block
+	font-size: 21px
+	font-weight: 400
+	line-height: 43px
+	span 
+		font-size: 22px
+		font-weight: 300
+		color: $color_tapa_approx
+		margin: 0 14px
+
 
 .order-amount-celect 
 	border: 2px solid $color_pumice_approx
-	padding: 11px 10px 11px 20px
+	padding: 6px 10px 6px 20px
 	color: $color_tapa_approx
+	font-size: 21px
+	font-weight: 400
+	font-family: $font_0, $font_1
+
+.ticket-number 
+	font-size: 20px
+	line-height: 24px
+	font-weight: 400
+	margin-bottom: 14px
+
+input 
+	width: 100%
+	border: 2px solid $color_pumice_approx
+	height: 43px
+	margin-top: 5px
+	padding: 8px 11px
+	font-size: 19px
+	font-weight: 400
+	line-height: normal
+	font-family: $font_0, $font_1
+	color: $color_zeus_approx
+
+label 
+	font-size: 19px
+	font-weight: 300
+	line-height: 22px
+
+.pay-section 
+	margin-top: 55px
+
+.total-price 
+	font-size: 29px
+	font-weight: 300
+	color: $color_stack_approx
+	.calculated-price 
+		color: $color_downy_approx
+		font-weight: 400
+
+	.calculated-price-text 
+		color: $color_downy_approx
+		font-weight: 400
+
 
 footer 
 	background-color: $color_zeus_approx

@@ -45,42 +45,36 @@
     });
 
     // Order form amount handler 
-    //existingFormAmount = 1;
-    //$('.order-amount-celect').on('change', function () {
-    //    var ticketAmount = $(this).val();
+    oldTicketAmount = 1;
 
-
-    //    if (existingFormAmount < ticketAmount) {
-    //        for (var i = ticketAmount; i <= existingFormAmount; i++) {
-    //            $('.ticket-order-info').clone().after('.ticket-order-info');
-    //        }
-    //    } else {
-    //        //delete
-    //    }
-    //    existingFormAmount = ticketAmount;
-    //    console.log(existingFormAmount);
-
-    //});
-
-    /********************************/
     $('.order-amount-celect').on('change', function () {
         var ticketAmount = $(this).val();
         var cloneElement = $('.ticket-order-info').first();
         var existingFormAmount = $('.ticket-order-info').length;
 
-        for (var i = existingFormAmount; i < ticketAmount; i++) {
-            $('.form-area').append(cloneElement.clone());
-            $('.ticket-order-info').last().children('.test-texting').text('Test' + (i + 1));
-            $('.ticket-order-info form').last().val("");
+        if (oldTicketAmount < ticketAmount) {
 
-        }
+            for (var i = existingFormAmount; i < ticketAmount; i++) {
+                $('.form-area').append(cloneElement.clone());
+                $('.ticket-order-info').last().children('.ticket-number').text('Ticket #' + (i + 1));
+                $('.ticket-order-info input[name=Firstname]').last().val("");
+                $('.ticket-order-info input[name=Lastname]').last().val("");
+                $('.ticket-order-info input[name=Email]').last().val("");
+                $('.ticket-order-info input[name=Mobile]').last().val("");
+            }
+
+        } else {
+
+            for (var i = oldTicketAmount; i > ticketAmount; i--) {
+                $('.ticket-order-info').last().remove();
+            }
+
+        };
+        oldTicketAmount = ticketAmount;
+
+        $('.amount').text(ticketAmount);
+        $('.calculated-price').text(329 * ticketAmount);
 
     });
-
-
-    /********************************/
-
-
-
 
 });
