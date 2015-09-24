@@ -500,6 +500,21 @@ figure.quote img {
     margin-bottom: 40px;
 }
 
+    .select-tickets .select-tickets-header .icon .fa {
+        -webkit-transition: all ease-out 300ms;
+        -moz-transition: all ease-out 300ms;
+        -o-transition: all ease-out 300ms;
+        transition: all ease-out 300ms;
+    }
+
+    .select-tickets.toggled .select-tickets-header .icon .fa {
+        transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+
 .select-tickets-header {
     background-color: #64c6bb;
     color: #fff;
