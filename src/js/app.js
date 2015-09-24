@@ -44,4 +44,44 @@
 
     });
 
+    // Order form amount handler 
+    //existingFormAmount = 1;
+    //$('.order-amount-celect').on('change', function () {
+    //    var ticketAmount = $(this).val();
+
+
+    //    if (existingFormAmount < ticketAmount) {
+    //        for (var i = ticketAmount; i <= existingFormAmount; i++) {
+    //            $('.ticket-order-info').clone().after('.ticket-order-info');
+    //        }
+    //    } else {
+    //        //delete
+    //    }
+    //    existingFormAmount = ticketAmount;
+    //    console.log(existingFormAmount);
+
+    //});
+
+    /********************************/
+    $('.order-amount-celect').on('change', function () {
+        var ticketAmount = $(this).val();
+        var cloneElement = $('.ticket-order-info').first();
+        var existingFormAmount = $('.ticket-order-info').length
+
+
+
+        for (var i = existingFormAmount; i < ticketAmount; i++) {
+            cloneElement.clone().insertAfter(cloneElement);
+
+        }
+
+
+    });
+
+
+    /********************************/
+
+
+
+
 });
