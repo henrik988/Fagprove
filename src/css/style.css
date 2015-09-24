@@ -319,6 +319,15 @@ section {
     background-size: cover;
 }
 
+
+.secondary-hero {
+    background: url('../img/hero/secondary_hero.png') no-repeat 100% 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .hero-overlay {
     background-color: rgba(207,98,93,0.78);
 }
