@@ -508,6 +508,7 @@ figure.quote img {
     font-weight: 400;
     padding: 24px 30px;
     overflow: hidden;
+    cursor: pointer;
 }
 
     .select-tickets-header .icon {
