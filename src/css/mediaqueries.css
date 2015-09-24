@@ -90,6 +90,10 @@
 
     .col-20 {
         width: 50% !important;
+        float: none !important;
+        display: inline-block !important;
+        margin-right: -2px !important;
+        margin-left: -2px !important; 
     }
 
     footer {
