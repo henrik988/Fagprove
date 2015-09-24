@@ -657,6 +657,11 @@ input {
     line-height: normal;
     font-family: 'Roboto', sans-serif;
     color: #231f20;
+    border-radius: 0;
+}
+
+select {
+    border-radius: 0;
 }
 
 label {
