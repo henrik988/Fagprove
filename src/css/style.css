@@ -267,11 +267,15 @@ section {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    text-transform: uppercase;
 }
 
 .btn-lg {
-    padding: 11px 15px;
+    padding: 14px 30px;
     border-radius: 2px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
     cursor: pointer;
     display: inline-block;
     border: 0;
@@ -298,6 +302,15 @@ section {
     font-weight: 500;
 }
 
+.btn-secondary {
+    background-color: #64c6bb;
+    color: #fff;
+}
+
+    .btn-secondary:hover {
+        background-color: #7BCBC2;
+    }
+
 .btn-special {
     color: #fff;
     font-size: 19px;
@@ -305,6 +318,7 @@ section {
     line-height: normal;
     background-color: rgba(0, 0, 0, 0.20);
     border: 2px solid #fff;
+    padding: 11px 15px;
 }
 
 .hero {
@@ -482,6 +496,82 @@ figure.quote img {
     margin: 0 auto 30px auto;
 }
 
+.select-tickets {
+    margin-bottom: 40px;
+}
+
+.select-tickets-header {
+    background-color: #64c6bb;
+    color: #fff;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 400;
+    padding: 24px 30px;
+    overflow: hidden;
+}
+
+    .select-tickets-header .icon {
+        display: flex;
+        margin-top: 8px;
+    }
+
+        .select-tickets-header .icon .fa {
+            font-size: 60px;
+            line-height: 23px;
+        }
+
+.select-tickets-content {
+    border: 2px solid #64C6BB;
+    border-top: 0px;
+    padding: 17px 30px;
+    overflow: hidden;
+}
+
+    .select-tickets-content > p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 23px;
+        margin-top: 0;
+    }
+
+.select-tickets-bottom {
+    position: relative;
+    overflow: hidden;
+}
+
+.select-ticket-bottom-content {
+    position: absolute;
+    bottom: 0;
+}
+
+.select-tickets-content .price {
+    font-size: 29px;
+    line-height: 33px;
+    font-weight: 400;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+    .select-tickets-content .price span.number {
+        color: #65c6bb;
+    }
+
+    .select-tickets-content .price span.vat {
+        font-size: 27px;
+        color: #65c6bb;
+    }
+
+.select-tickets-content .ticket-countdown {
+    color: #cf625d;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: normal;
+    display: inline-block;
+}
+
+
+/* Footer styles */
+
 footer {
     background-color: #231f20;
     color: #fff;
@@ -509,6 +599,7 @@ footer {
     footer .footer-icons {
         font-size: 25px;
     }
+
 
 /* Helper classes */
 

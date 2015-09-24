@@ -5,6 +5,7 @@ $concrete: #f2f2f2
 $color_chestnut_rose_approx: #cf625d
 $white: #fff
 $color_japonica_approx: #da7570
+$color_monte_carlo_approx: #7bcbc2
 $black_20: rgba(0, 0, 0, 0.20)
 $color_chestnut_rose_78_approx: rgba(207,98,93,0.78)
 $color_tapa_approx: #777777
@@ -308,11 +309,15 @@ section
 	-ms-user-select: none
 	//If you use compass, instead of the line below you could use + user-select($select)
 	user-select: none
+	text-transform: uppercase
 
 .btn-lg 
-	padding: 11px 15px
+	padding: 14px 30px
 	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
 	border-radius: 2px
+	font-size: 20px
+	font-weight: 400
+	line-height: normal
 	cursor: pointer
 	display: inline-block
 	border: 0
@@ -336,6 +341,13 @@ section
 	font-size: 19px
 	font-weight: 500
 
+.btn-secondary 
+	background-color: $color_downy_approx
+	color: $white
+	&:hover 
+		background-color: $color_monte_carlo_approx
+
+
 .btn-special 
 	color: $white
 	font-size: 19px
@@ -343,6 +355,7 @@ section
 	line-height: normal
 	background-color: $black_20
 	border: 2px solid $white
+	padding: 11px 15px
 
 .hero 
 	margin-top: 69px
@@ -470,6 +483,69 @@ section
 	width: 70px
 	background-color: $color_tapa_approx
 	margin: 0 auto 30px auto
+
+.select-tickets 
+	margin-bottom: 40px
+
+.select-tickets-header 
+	background-color: $color_downy_approx
+	color: $white
+	font-size: 35px
+	line-height: 40px
+	font-weight: 400
+	padding: 24px 30px
+	overflow: hidden
+	.icon 
+		display: flex
+		margin-top: 8px
+		.fa 
+			font-size: 60px
+			line-height: 23px
+
+
+
+.select-tickets-content 
+	border: 2px solid $color_downy_approx
+	border-top: 0
+	padding: 17px 30px
+	overflow: hidden
+	.price 
+		font-size: 29px
+		line-height: 33px
+		font-weight: 400
+		margin-right: 10px
+		display: inline-block
+		span 
+			&.number 
+				color: $color_downy_approx
+
+			&.vat 
+				font-size: 27px
+				color: $color_downy_approx
+
+
+
+	.ticket-countdown 
+		color: $color_chestnut_rose_approx
+		font-size: 21px
+		font-weight: 300
+		line-height: normal
+		display: inline-block
+
+	> p 
+		font-size: 18px
+		font-weight: 300
+		line-height: 23px
+		margin-top: 0
+
+
+.select-tickets-bottom 
+	position: relative
+	overflow: hidden
+
+.select-ticket-bottom-content 
+	position: absolute
+	bottom: 0
 
 footer 
 	background-color: $color_zeus_approx
