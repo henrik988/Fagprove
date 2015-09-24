@@ -75,6 +75,21 @@
     .col-50 {
         width: 100% !important;
     }
+
+    .order-countdown {
+        display: block !important;
+        margin-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width : 890px) {
+    .order-countdown {
+        margin-bottom: 14px !important;
+    }
+
+    .order-amount {
+        font-size: 17px;
+    }
 }
 
 @media only screen and (max-width : 550px) {
@@ -203,5 +218,9 @@
 
     .btn-lg {
         padding: 14px 20px !important;
+    }
+
+    .total-price {
+        font-size: 19px !important;
     }
 }
