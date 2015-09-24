@@ -27,6 +27,15 @@
             text-align: center !important;
         }
 
+    .select-ticket-bottom-content, .select-tickets-button {
+        float: none !important;
+        position: inherit !important;
+    }
+
+    .select-tickets-button {
+        margin-top: 20px !important;
+    }
+
     @keyframes fadeInUp {
         from {
             opacity: 0;
@@ -93,7 +102,7 @@
         float: none !important;
         display: inline-block !important;
         margin-right: -2px !important;
-        margin-left: -2px !important; 
+        margin-left: -2px !important;
     }
 
     footer {
@@ -166,5 +175,33 @@
     .col-20 {
         width: 100% !important;
         margin-bottom: 8px !important;
+    }
+
+    .select-tickets-header {
+        font-size: 23px !important;
+        line-height: 26px !important;
+    }
+
+        .select-tickets-header .icon .fa {
+            font-size: 35px !important;
+            line-height: 23px !important;
+        }
+
+        .select-tickets-header .icon {
+            margin-top: 0;
+        }
+
+    .select-tickets-content .price {
+        font-size: 21px !important;
+        line-height: 24px !important;
+        margin-bottom: 4px !important;
+    }
+
+        .select-tickets-content .price span.vat {
+            font-size: 19px;
+        }
+
+    .btn-lg {
+        padding: 14px 20px !important;
     }
 }
