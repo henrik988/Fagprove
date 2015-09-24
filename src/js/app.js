@@ -66,15 +66,14 @@
     $('.order-amount-celect').on('change', function () {
         var ticketAmount = $(this).val();
         var cloneElement = $('.ticket-order-info').first();
-        var existingFormAmount = $('.ticket-order-info').length
-
-
+        var existingFormAmount = $('.ticket-order-info').length;
 
         for (var i = existingFormAmount; i < ticketAmount; i++) {
-            cloneElement.clone().insertAfter(cloneElement);
+            $('.form-area').append(cloneElement.clone());
+            $('.ticket-order-info').last().children('.test-texting').text('Test' + (i + 1));
+            $('.ticket-order-info form').last().val("");
 
         }
-
 
     });
 
