@@ -9,6 +9,7 @@ $color_monte_carlo_approx: #7bcbc2
 $black_20: rgba(0, 0, 0, 0.20)
 $color_chestnut_rose_78_approx: rgba(207,98,93,0.78)
 $color_tapa_approx: #777777
+$color_pumice_approx: #c6c6c6
 
 //fonts
 $font_0: Roboto
@@ -40,6 +41,28 @@ $url_6: url(../img/icons/divider_white.png)
 	font-size: 21px
 	line-height: 26px
 	font-weight: 100
+
+
+//original selectors
+//.select-tickets-header, .ticket-information-header
+.extend_3 
+	background-color: $color_downy_approx
+	color: $white
+	font-size: 35px
+	line-height: 40px
+	font-weight: 400
+	padding: 24px 30px
+	overflow: hidden
+	cursor: pointer
+
+
+//original selectors
+//.select-tickets-content, .ticket-information-content
+.extend_4 
+	border: 2px solid $color_downy_approx
+	border-top: 0
+	padding: 17px 30px
+	overflow: hidden
 
 
 
@@ -502,15 +525,11 @@ section
 		-o-transform: rotate(90deg)
 
 
+.ticket-information 
+	margin-bottom: 40px
+
 .select-tickets-header 
-	background-color: $color_downy_approx
-	color: $white
-	font-size: 35px
-	line-height: 40px
-	font-weight: 400
-	padding: 24px 30px
-	overflow: hidden
-	cursor: pointer
+	@extend %extend_3
 	.icon 
 		display: flex
 		margin-top: 8px
@@ -520,11 +539,12 @@ section
 
 
 
+.ticket-information-header 
+	@extend %extend_3
+	cursor: auto
+
 .select-tickets-content 
-	border: 2px solid $color_downy_approx
-	border-top: 0
-	padding: 17px 30px
-	overflow: hidden
+	@extend %extend_4
 	.price 
 		font-size: 29px
 		line-height: 33px
@@ -556,6 +576,9 @@ section
 		margin-bottom: 30px
 
 
+.ticket-information-content 
+	@extend %extend_4
+
 .select-tickets-bottom 
 	position: relative
 	overflow: hidden
@@ -563,6 +586,35 @@ section
 .select-ticket-bottom-content 
 	position: absolute
 	bottom: 0
+
+.dashed-divider 
+	height: 1px
+	border-top: 1px dotted $color_zeus_approx
+
+.ticket-selection 
+	overflow: hidden
+
+.ticket-type 
+	font-size: 23px
+	line-height: 25px
+	font-weight: 400
+	display: inline-block
+
+.order-countdown 
+	color: $color_chestnut_rose_approx
+	font-size: 20px
+	font-weight: 300
+	line-height: 25px
+	display: inline-block
+	margin-left: 11px
+
+.order-amount 
+	display: inline-block
+
+.order-amount-celect 
+	border: 2px solid $color_pumice_approx
+	padding: 11px 10px 11px 20px
+	color: $color_tapa_approx
 
 footer 
 	background-color: $color_zeus_approx

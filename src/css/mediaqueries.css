@@ -177,7 +177,7 @@
         margin-bottom: 8px !important;
     }
 
-    .select-tickets-header {
+    .select-tickets-header, .ticket-information-header {
         font-size: 23px !important;
         line-height: 26px !important;
     }
