@@ -736,3 +736,230 @@ footer {
 .pull-right {
     float: right;
 }
+
+@media only screen and (max-width : 1120px) {
+    .content, .hero-content {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
+
+
+    .main-menu {
+        float: none !important;
+        margin-top: 75px !important;
+        display: none !important;
+        -webkit-animation-name: fadeInUp !important;
+        animation-name: fadeInUp !important;
+        -webkit-animation-duration: 1s !important;
+        animation-duration: 1s !important;
+        -webkit-animation-fill-mode: both !important;
+        animation-fill-mode: both !important;
+    }
+
+        .main-menu.toggled {
+            display: block !important;
+        }
+
+        .main-menu li {
+            display: block !important;
+            margin: 20px 0 !important;
+            text-align: center !important;
+        }
+
+    .select-ticket-bottom-content, .select-tickets-button {
+        float: none !important;
+        position: inherit !important;
+    }
+
+    .select-tickets-button {
+        margin-top: 20px !important;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    #hamburger-menu {
+        display: block !important;
+    }
+
+    .hero-header {
+        font-size: 40px !important;
+    }
+
+    .col-68 {
+        width: 100% !important;
+    }
+
+    .hidden-md {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width : 1020px) {
+    .speakers-row .speaker {
+        width: 50% !important;
+    }
+
+    .col-50 {
+        width: 100% !important;
+    }
+
+    .order-countdown {
+        display: block !important;
+        margin-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width : 890px) {
+    .order-countdown {
+        margin-bottom: 14px !important;
+    }
+
+    .order-amount {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width : 550px) {
+    .speakers-row .speaker {
+        width: 100% !important;
+    }
+
+    .big-conference-info {
+        font-size: 36px !important;
+        font-weight: 300 !important;
+        line-height: 38px !important;
+    }
+
+    .quote-text {
+        font-size: 26px !important;
+        line-height: normal !important;
+    }
+
+    .col-10 {
+        width: 20% !important;
+    }
+
+    .col-20 {
+        width: 50% !important;
+        float: none !important;
+        display: inline-block !important;
+        margin-right: -2px !important;
+        margin-left: -2px !important;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+        footer .pull-right, footer .pull-left {
+            float: none !important;
+        }
+
+        footer .footer-icons {
+            margin-top: 35px !important;
+        }
+
+        footer span {
+            font-size: 16px !important;
+            font-weight: 400 !important;
+        }
+
+        footer figure.divider {
+            background-size: 14px !important;
+            width: 14px !important;
+            margin: 0 13px !important;
+        }
+}
+
+
+@media only screen and (max-width : 480px) {
+    h1 {
+        font-size: 34px !important;
+        line-height: 43px !important;
+    }
+
+    .hero-place {
+        font-size: 16px !important;
+    }
+
+    .hero-header {
+        font-size: 29px !important;
+    }
+
+    .early-bird-promo-box .context {
+        font-size: 22px !important;
+    }
+
+    .early-bird-promo-box .countdown-text {
+        font-size: 23px !important;
+    }
+
+    .btn, .btn-lg {
+        width: 100% !important;
+    }
+
+    .big-conference-info {
+        font-size: 30px !important;
+    }
+
+    .quote-text {
+        font-size: 22px !important;
+    }
+
+    .quote-author {
+        font-size: 22px;
+    }
+
+    .col-10 {
+        width: 50% !important;
+    }
+
+    .col-20 {
+        width: 100% !important;
+        margin-bottom: 8px !important;
+    }
+
+    .select-tickets-header, .ticket-information-header {
+        font-size: 23px !important;
+        line-height: 26px !important;
+    }
+
+        .select-tickets-header .icon .fa {
+            font-size: 35px !important;
+            line-height: 23px !important;
+        }
+
+        .select-tickets-header .icon {
+            margin-top: 0;
+        }
+
+    .select-tickets-content .price {
+        font-size: 21px !important;
+        line-height: 24px !important;
+        margin-bottom: 4px !important;
+    }
+
+        .select-tickets-content .price span.vat {
+            font-size: 19px;
+        }
+
+    .btn-lg {
+        padding: 14px 20px !important;
+    }
+
+    .total-price {
+        font-size: 19px !important;
+    }
+}
